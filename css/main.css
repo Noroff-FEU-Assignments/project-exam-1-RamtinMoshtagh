@@ -151,7 +151,7 @@ body.light-theme{
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 999;
+    z-index: 9999;
     display: flex;
     opacity: 0;
     transform: scale(0);
@@ -171,6 +171,7 @@ body.light-theme{
 .form-input,
 .form-btn{
     display: inline-block;
+    outline: none;
     border: 2px solid var(--secondary-background-color);
     padding: 1.5rem;
     color: var(--light-color-alt);
@@ -181,14 +182,14 @@ body.light-theme{
     background-color: var(--primary-background-color);
 }
 .form-btn{
-    margin-left:-.5rem;
+    margin-left: -.5rem;
     border-left: none;
     background-color: var(--secondary-background-color);
     text-transform: uppercase;
     width: 8rem;
 }
 .form-note{
-    font-size:var(--font-size-xsm);
+    font-size: var(--font-size-xsm);
     align-self: flex-end;
 }
 .form-close-btn{

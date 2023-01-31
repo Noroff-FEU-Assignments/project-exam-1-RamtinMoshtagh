@@ -19,3 +19,11 @@ const toggleMenu = () => {
     menuToggleIcon.classList.toggle('activated');
 };
 menuToggleIcon.addEventListener('click', toggleMenu);
+const formOpenBtn = selectElement('#search-icon');
+const formCloseBtn = selectElement('#form-close-btn');
+const searchFormContainer = selectElement('#search-form-container');
+formOpenBtn.addEventListener('click', () => searchFormContainer.classList.add('activated'));
+formCloseBtn.addEventListener('click', () => searchFormContainer.classList.remove('activated'));
+window.addEventListener('keyup', event => {
+    if(event.key ==='Esacape') searchFormContainer.classList.remove('activated');
+});
