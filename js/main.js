@@ -19,8 +19,3 @@ const toggleMenu = () => {
     menuToggleIcon.classList.toggle('activated');
 };
 menuToggleIcon.addEventListener('click', toggleMenu);
-const bodyElement = document.body;
-const themeToggleBtn = selectElement('#theme-toggle-btn');
-themeToggleBtn.addEventListener('click', () => {
-    bodyElement.classList.toggle('light-theme');
-});
