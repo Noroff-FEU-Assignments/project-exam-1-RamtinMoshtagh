@@ -297,6 +297,9 @@ body.light-theme{
     background-color: var(--hover-dark-color);
     color: var(--hover-light-color);
 }
+.article:hover .article-data-spacer{
+    background-color: var(--hover-light-color);
+}
 .article-data{
     display: flex;
     align-items: center;
@@ -309,4 +312,45 @@ body.light-theme{
     height: .5rem;
     background-color: var(--light-color-alt);
     transform: rotate(45deg);
+}
+.title{
+    color: var(--light-color);
+}
+.article-title{
+    font-size: var(--font-size-md);
+}
+.section-title{
+    position: relative;
+    font-size: var(--font-size-md);
+    margin-bottom: 6rem;
+}
+.section-title::before{
+    content: attr(data-name);
+    font-size: var(--font-size-lg);
+    text-transform: uppercase;
+    opacity: .1;
+    position: absolute;
+    top: 1.5rem;
+    left: 2rem;
+}
+.article.swiper-slide{
+    height: 40rem;
+}
+.swiper-wrapper{
+    height: auto;
+}
+.swiper-controls{
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: var(--secondary-background-color);
+}
+.swiper-controls::after{
+    font-size: 1.6rem;
+    color: light var(--light-color);
+}
+.swiper-pagination{
+    bottom: .5rem !important;
+}
+.swiper-pagination-bullet{
+    background-color: var(--light-color);
 }
