@@ -86,3 +86,11 @@ const validateInputs = () => {
     }
   });
 };
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    shouldValidate = true;
+    validateInputs();
+    if (isFormValid) {
+    }
+  });
+  inputFields.forEach((input) => input.addEventListener("input", validateInputs));
