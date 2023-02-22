@@ -71,3 +71,18 @@ emailInput.isValid = () => isValidEmail(emailInput.value);
 phoneInput.isValid = () => isValidPhone(phoneInput.value);
 subjectInput.isValid = () =>!!subjectInput.value;
 messageInput.isValid = () => !!messageInput.value;
+let shouldValidate = false;
+let isFormValid = false;
+const validateInputs = () => {
+  if (!shouldValidate) return;
+  isFormValid = true;
+  inputFields.forEach((input) => {
+    input.classList.remove("invalid");
+    input.nextElementSibling.classList.add("hide");
+    if (!input.isValid()) {
+      input.classList.add("invalid");
+      isFormValid = false;
+      input.nextElementSibling.classList.remove("hide");
+    }
+  });
+};
