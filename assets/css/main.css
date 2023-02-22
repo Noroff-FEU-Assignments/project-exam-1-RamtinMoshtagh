@@ -589,6 +589,24 @@ body.light-theme{
     margin-top: auto;
     margin-bottom: 0;
 }
+.contact-banner{
+	background-color:var(--primary-background-color);
+	color: white;
+	padding: 40px;
+}
+.invalid{
+	border: 1px solid red;
+}
+input{
+	padding: 10px;
+	border-radius: 5px;
+	width: 280px;
+	border: 1px solid rgba(0,0,0,.75);
+	font-size: 15px;
+	outline: none;
+	color: #333;
+}
+
 @media screen and (min-width: 700px) {
     .trending-news-box{
         flex-direction: row;
