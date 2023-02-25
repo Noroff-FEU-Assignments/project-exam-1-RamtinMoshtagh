@@ -69,4 +69,4 @@ $(document).ready(function(){
             $("#seeMore").text("No Content").addClass("noContent");
         }
     });
-})
+});

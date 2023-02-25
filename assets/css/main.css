@@ -431,11 +431,6 @@ body.light-theme{
 .older-posts-grid-wrapper .article-title{
     margin-bottom: var(--margin-sm);
 }
-/* .noContent {
-    color: #000 !important;
-    background-color: transparent !important;
-    pointer-events: none;
-} */
 .see-more-container{
     padding-top: var(--margin-md);
 }
