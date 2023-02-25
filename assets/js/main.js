@@ -61,11 +61,11 @@ const swiper = new Swiper(".swiper", {
     }   
 });
 $(document).ready(function(){
-    $(".article d-grid").slice(0,6).show();
+    $(".older-posts section").slice(0,6).show();
     $("#seeMore").on("click", function(e){
         e.preventDefault();
-        $(".article d-grid:hidden").slice(0,6).slideDown();
-        if($("article d-grid:hidden").length == 0) {
+        $(".older-posts section:hidden").slice(0,6).slideDown();
+        if($("older-posts section:hidden").length == 0) {
             $("#seeMore").text("No Content").addClass("noContent");
         }
     });

@@ -4,7 +4,6 @@ const emailInput = document.querySelector("input[name='email']");
 const phoneInput = document.querySelector("input[name='phone']");
 const subjectInput = document.querySelector("input[name='subject']");
 const messageInput = document.querySelector("textarea[name='message']");
-
 nameInput.isValid = () => !!nameInput.value;
 emailInput.isValid = () => isValidEmail(emailInput.value);
 phoneInput.isValid = () => isValidPhone(phoneInput.value);
