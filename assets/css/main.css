@@ -632,22 +632,17 @@ textarea{
 	font-size: 18px;
 }
 .btn-contactForm{
-	color: black;
+	color: green;
 	padding: 20px;
 	border: 1px solid rgba(0,0,0,.75);
 	border-radius: 10px;
 	background: none;
 	cursor: pointer;
 	transition: all 0.5s;
-	color: rgba(0,0,0,.75);
+	
 }
 .btn-contactForm:hover{
-	background-image: linear-gradient(
-	  to right,
-	  #afb6cd 0%,
-	  #131417 100%
-	);
-	color: white;
+	background-image: var(--gradient-color);
 }
 form{
 	padding: 40px;

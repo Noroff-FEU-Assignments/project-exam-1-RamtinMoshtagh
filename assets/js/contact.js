@@ -4,11 +4,21 @@ const emailInput = document.querySelector("input[name='email']");
 const phoneInput = document.querySelector("input[name='phone']");
 const subjectInput = document.querySelector("input[name='subject']");
 const messageInput = document.querySelector("textarea[name='message']");
+
 nameInput.isValid = () => !!nameInput.value;
 emailInput.isValid = () => isValidEmail(emailInput.value);
 phoneInput.isValid = () => isValidPhone(phoneInput.value);
 subjectInput.isValid = () =>!!subjectInput.value;
 messageInput.isValid = () => !!messageInput.value;
+const inputFields = [nameInput, emailInput, phoneInput, subjectInput, messageInput];
+const isValidEmail = (email) => {
+  const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(String(email).toLowerCase());
+};
+const isValidPhone = (phone) => {
+  const re = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
+  return re.test(String(phone).toLowerCase());
+};
 let shouldValidate = false;
 let isFormValid = false;
 const validateInputs = () => {
@@ -25,10 +35,10 @@ const validateInputs = () => {
   });
 };
 form.addEventListener("submit", (e) => {
-    e.preventDefault();
-    shouldValidate = true;
-    validateInputs();
-    if (isFormValid) {
-    }
-  });
-  inputFields.forEach((input) => input.addEventListener("input", validateInputs));
+  e.preventDefault();
+  shouldValidate = true;
+  validateInputs();
+  if (isFormValid) {
+  }
+});
+inputFields.forEach((input) => input.addEventListener("input", validateInputs));
