@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Newsly | Post</title>
+    <title>Newsly | Blog</title>
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon.png">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css"/>
@@ -34,7 +34,7 @@
                         <a href="#" class="list-link">Membership</a>
                     </li>
                     <li class="list-item">
-                        <a href="#" class="list-link">Contact</a>
+                        <a href="contact.html" class="list-link">Contact</a>
                     </li>
                     <li class="list-item screen-lg-hidden">
                         <a href="./signin.html" class="list-link">Sign in</a>
@@ -77,53 +77,19 @@
             <i class="ri-close-line"></i>
         </div>
     </div>
-    <section class="blog-post section-header-offset">
-        <div class="blog-post-container container">
-            <div class="blog-post-data">
-                <h3 class="title blog-post-title">Is VR the future?</h3>
-                <div class="article-data">
-                    <span>Dec 6th 2021</span>
-                    <span class="article-data-spacer"></span>
-                    <span>4 Min read</span>
-                </div>
-                <img src="./assets/images/featured/featured-1.jpg" alt="">
+    <div class="products-container"></div>
+         <div class="products-preview">
+            <div class="preview" data-id="">
+               <i class="fas fa-times"></i>
+               <img src="" id="preview-image">
+               <h3></h3>
+               <p id="product-description"></p>
+               <div class="buttons">
+                <a href="#" class="buy">more info</a>
+              <a href="#" class="cart">wow</a>
+               </div>
             </div>
-            <div class="container">
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis eius possimus hic eligendi distinctio rerum incidunt, esse quasi eum molestiae ducimus ipsam quae, aliquid ullam placeat dolorum nulla vero. Quam? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente repellat consequatur culpa, repudiandae aut dolores iusto. Rem natus soluta, dolores, ad deleniti, aut dolorem corrupti quasi amet unde delectus hic?
-                </p>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis eius possimus hic eligendi distinctio rerum incidunt, esse quasi eum molestiae ducimus ipsam quae, aliquid ullam placeat dolorum nulla vero. Quam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero quod necessitatibus, aspernatur pariatur asperiores earum quas adipisci veritatis quidem facilis! Nihil veniam quaerat nulla possimus, asperiores vero voluptatum placeat. Eveniet!
-                </p>
-                <blockquote class="quote">
-                    <p><span><i class="ri-double-quotes-l"></i></span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia voluptates, laboriosam voluptatum quos non consequuntur nesciunt necessitatibus tempora quod inventore corporis rem nihil itaque, at provident minus aliquam veritatis. Labore?  <span><i class="ri-double-quotes-r"></i></span></p>
-                </blockquote>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis eius possimus hic eligendi distinctio rerum incidunt, esse quasi eum molestiae ducimus ipsam quae, aliquid ullam placeat dolorum nulla vero. Quam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero quod necessitatibus, aspernatur pariatur asperiores earum quas adipisci veritatis quidem facilis! Nihil veniam quaerat nulla possimus, asperiores vero voluptatum placeat. Eveniet!
-                </p>
-                <div class="author d-grid">
-                    <div class="author-image-box">
-                        <img src="./assets/images/author.jpg" alt="" class="article-image">
-                    </div>
-                    <div class="author-about">
-                        <h3 class="author-name">John Doe</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque quis repellat rerum, possimus cumque dolor repellendus eligendi atque explicabo exercitationem id.</p>
-                        <ul class="list social-media">
-                            <li class="list-item">
-                                <a href="#" class="list-link"><i class="ri-instagram-line"></i></a>
-                            </li>
-                            <li class="list-item">
-                                <a href="#" class="list-link"><i class="ri-facebook-circle-line"></i></a>
-                            </li>
-                            <li class="list-item">
-                                <a href="#" class="list-link"><i class="ri-twitter-line"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+         </div>
     <footer class="footer section">
         <div class="footer-container container d-grid">
             <div class="company-data">
@@ -212,6 +178,7 @@
             </div>
         </div>
     </footer>
+    <script src="./assets/js/productPage.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>
 </html>
