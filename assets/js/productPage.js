@@ -48,10 +48,7 @@ async function getProducts (url){
            preveiwContainer.style.display = 'none';
          };
        });
-
-   })
-   
+   })  
 }
-
 getProducts(baseURL);
 console.log(productContainer);
